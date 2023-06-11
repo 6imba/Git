@@ -1,0 +1,61 @@
+> git branch; command lets you create, list, rename, delete branches.
+> git checkout; command lets you create and switch branches.
+> git merge; command lets you merge branches.
+
+# Branches are just a pointers to a commits. 
+    - So every time you commit, the branch_pointer get pointed to the new commit.
+    - Time you create new branch, a new pointer is assigned to a code state to be committed.
+    - 
+
+*********************************************
+> git branch <local branch name>
+> git checkout <local branch name>
+> git add <local file name>
+> git commit -m "<message>"
+*********************************************
+
+
+# In order to operate git command on remote repo from local, you need to configure remote repository with local:
+    > git remote add <new-remote-repo>
+    > git remote add origin <https_url>
+    > git push <new-remote-repo>
+
+# Create branch from existing one:
+    > git checkout <head-branch> 
+    > git checkout -b <subbranch> <head-branch> 
+
+
+# Switching branch:
+    - move HEAD to point to the checked branch.
+
+
+
+# HEAD -> branch(pointer) -> commit
+
+# Delete branch:
+    > git branch -d <branch-name>; if branch to be delete is merged to other branch.
+    > git branch -D <branch-name>; if branch to be delete is not merged yet.
+    - delete remote branch from local:
+        > git push origin -delete <branch-name> || > git push origin :<branch-name>
+
+
+
+# Rename branch:
+    - switch to the branch; > git branch -m <new-name>
+
+
+# See branch:
+    > git branch
+    > git branch -r; see remote branch
+    > git branch -a; see all branch
+
+
+
+
+# flags: -m, -b, -u, -r, -a
+
+
+# Roll back to previous state/commit.
+    > git ro
+
+# 

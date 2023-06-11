@@ -1,0 +1,23 @@
+- git branch -a vs git branch --list ?
+
+# Questions:
+    1. commit and branch relation?
+        - Branch is just a series of corresponding commit and pointer to the last commit. ( branch ~ commit )
+        - A branch has many related commit.
+        - Git branches are effectively a pointer to a commit(snapshot of your changes).
+
+Q. fetch vs pull:
+    - Git Fetch is the command that tells the local repository that there are changes available in the remote repository without bringing the changes into the local repository.
+    - Git Pull on the other hand brings the copy of the remote directory changes into the local repository.
+
+Q. what happen to the branch that we create when we dont do any task on it and switch into some other branch?
+
+Q. while creating any branches, does it matter "on top of what branch we created that particular branches"?
+    - yes, base branch of newly created branch.
+
+Q. What will happen to the task/manipulation/updation that we have done, staying in that particular task, if we delete that branch before commiting.
+    - so indoder to delete that particular branch you need to switch some other branch first, then the manipulated task is also switched to that branch.
+
+
+Q. How to see the branch tree in git?
+

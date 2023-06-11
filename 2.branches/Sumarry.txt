@@ -1,0 +1,33 @@
+
+# Whole Total Summary
+
+vs code:
+git branch new_branch
+task_1
+git add .
+git commit -m "stagged"
+git push origin new_branch
+
+github:
+merge new_branch to upper_branch
+
+vs code:
+git branch new_branch
+task_2
+git add .
+git commit -m "stagged"
+git push origin new_branch
+git status
+git rebase origin/dev
+git status
+git fetch
+git status
+git pull
+git push
+merger
+git push
+
+
+
+*************************************************************************************************************************************************************
+

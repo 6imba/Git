@@ -1,0 +1,13 @@
+- sub module is the git repo inside another git repo.
+
+# 1:
+	- create remote git Main-Module repo.
+	- create remote git Sub-Module repo.
+	- git submodule the Sub-Module repo inside Main-Module repo. 
+	- This will just href the Sub-Module repo from Main-Module repo. 
+
+# 2:
+	- create remote git Main-Module repo.
+	- create remote git Sub-Module repo.
+	- git submodule the Sub-Module repo inside Main-Module repo. 
+	- This will just href the Sub-Module repo from Main-Module repo. 

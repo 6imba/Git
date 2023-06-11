@@ -1,0 +1,63 @@
+# Git branch command:
+    $ git branch; command lets you create, list, rename, delete branches.
+    $ git branch || git branch --list : List all of the branches in your repository.
+    $ git branch <branch> : Create a new branch called ＜branch＞. This does not check out the new branch.
+    $ git branch -d <branch> : Delete the specified branch. This is a “safe” operation in that Git prevents you from deleting the branch if it has unmerged changes.
+    $ git branch -D <branch> : Force delete the specified branch, even if it has unmerged changes. This is the command to use if you want to permanently throw away all of the commits associated with a particular line of development.
+    $ git branch -m <branch> : Rename the current branch to ＜branch＞.
+    $ git branch -a : List all remote branches.
+
+    $ git checkout; command lets you create and switch branches.
+    $ git merge; command lets you merge branches.
+
+*********************************************
+> git branch <local branch name>
+> git checkout <local branch name>
+> git add <local file name>
+> git commit -m "<message>"
+*********************************************
+
+# Create branch from existing one:
+    > git checkout <head-branch> 
+    > git checkout -b <subbranch> <head-branch>  ==> Switching branch, moves HEAD to point to the checked branch.
+
+# HEAD -> branch(pointer) -> commit
+
+# Delete branch:
+    > git branch -d <branch-name>; if branch to be delete is merged to other branch.
+    > git branch -D <branch-name>; if branch to be delete is not merged yet.
+    - delete remote branch from local:
+        > git push origin -delete <branch-name> || > git push origin :<branch-name>
+
+# Rename branch:
+    - switch to the branch; > git branch -m <new-name>
+
+# See branch:
+    > git branch
+    > git branch -r; see remote branch
+    > git branch -a; see all branch
+
+# flags: -m, -b, -u, -r, -a
+
+
+> git branch -a
+> git show-branch
+> 
+
+
+
+
+$ git checkout <existing_branch>
+$ git checkout -b <new_branch>
+
+
+
+$ git branch -a
+$ git show-branch
+
+
+
+$ git switch <existing_branch>
+
+
+$ git pull origin DHA-176-ui-related-family-submission --no-rebase | $ git fetch origin $ git merge origin/<branchname> ==> Divergent branch

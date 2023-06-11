@@ -1,0 +1,25 @@
+> git log
+> git log --oneline
+> git log -p (show commits with diff)
+> git log --stat
+> git log --pretty=oneline
+> git log --pretty=short
+> git log --pretty=full
+> git log --since=2.days
+> git log --since=2.weeks
+> git log --since=2.months
+> git log --since=2.years
+> git log --pretty=format:"%h -- %an"  : placeholders.
+> git log -p -1
+
+> git commit --amend
+
+
+
+- file creator: author.
+- file changer: commitor.
+
+
+$ git log ==> commit history
+$ git log --oneline ==> commit history
+$ git diff --staged ==> show different commit

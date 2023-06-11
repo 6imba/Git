@@ -1,0 +1,16 @@
+git init
+ #code
+git add . 
+ #configure github_account(username&email) credential either in global or local scope
+ #git config --global user.name "6imba"
+ #git config --global user.name "simbaamir55@gmail.com"
+ #git config --global --edit (check the setted configuration)
+git commit -m "first commit project Updated"
+    #git commit -am "does add and commit at once"
+git push origin master (for the first time it ask for git username|email and password and store|save it in WindowCredentialManager: ControlPanel/Useraccount/CredentialManager/git:https//github.com, So that next time when we try to push updated code again, git will pull the saved user cendential from it(ControlPanel/Useraccount/CredentialManager/git:https//github.com))
+
+Now thats fine for one account, but problem arisfes when we 
+
+
+
+https://www.youtube.com/watch?v=2MGGJtTH0bQ

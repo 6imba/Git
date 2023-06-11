@@ -1,0 +1,31 @@
+$ git merge --contineu
+$ git stash
+$ git stash apply
+$ git stash pop
+$ git log
+$ git log --oneline03
+$ git add .
+$ git add <filename>
+$ git branch -a
+$ git branch -list
+$ git branch -r
+
+- merge vs pull vs push vs fetch vs rebase vs revert vs stash 
+
+- PR: pull request
+
+- merge remote branch to local
+- merge local branch to local
+
+- git flow
+- branching statergy
+	> remote/origin _ main/release/prod _ dev/feature/bug _ squad-epic-ticket _ squad-story-ticket _ squad-subtask-ticket
+
+- cherry pick ~ specific commit
+- commit chain
+- branch chain
+
+
+
+- git commit ==> it move our code from Staging Area ---> Repository
+- git remote add origin https://github.com/Amir-Shrestha/Project_name.git ==> link our project to github repository.

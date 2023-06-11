@@ -1,0 +1,21 @@
+How team work using git?
+How is work assign to a team members?
+How do team member do task?
+How work task send after its done?
+How to handle conflict?
+
+
+branching? merging? conflict? tagging? stashing?
+Branching workflow: Long running branches & Topic Branches
+Long running branches: master, develop, purpose update, this branch stayes till the end of project.
+Topic Branches: delete this branch once task is done.
+
+
+create and merge branch in local repo.
+create branch in local repo but push and merge branch in remote repo.
+
+
+
+- yadi ma multiple branch ma akaichoti kaam gariraxu vane k harek choti branch switch handa k commit hanirakhnu? (before switching branches make sure to commit all changes)
+- jaba sama auta kunai branch ko pr resolve hudaina tyo branch arko pr send garna mildaina ho?
+- when you switch any branch you can see the corresponding files of other branch getting removed too in local_git_repo.

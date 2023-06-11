@@ -1,0 +1,18 @@
+# Ways to delete file in git repo:
+    - delete file manually; - then stage deleted file >git add <deleted_filename>
+    - delete using git command which implicitly staged it; > git rm <file_name>; delete file (remove and stage file at the same time)
+    > git rm <file_name>;
+    
+# Ways to rename file in git repo:
+    - rename file manually; - then stage renamed file(git think the previous file is deleted) > git add <renamed_filename>
+    - rename using git command which implicitly staged it; > git mv <old_file_name> <new_file_name>; (rename and stage file at the same time)
+    > git mv <old_file_name> <new_file_name>;
+    
+# Ways to move file in git repo:
+    > git mv <old_file_name> <new_path>;
+
+
+# Untrack file that was being track before.
+    > git rm --cached <file_name>
+
+*** Note you have to commit everything.

@@ -1,0 +1,16 @@
+# Git Diff:
+    > git diff - Compare our file content of working_directory with staged_area. (Compare change code in working_directory with previous staged_code.)
+    > git diff --staged - Compare our file content of staged_area with local_repo_last_commit. (Compare change code in working_directory with previous staged_code.)
+
+
+
+# Shows the difference on content between working_directory and staged_area ===> git diff --staged
+# Shows the difference on content between staged_area and local_repo_last_commit ===> git diff
+
+
+
+# Compare our current modified code with staged area ===> git diff
+# Compare our staged area with previous commit ===> git diff --staged
+
+
+

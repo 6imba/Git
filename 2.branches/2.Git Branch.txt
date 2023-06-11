@@ -1,0 +1,222 @@
+# Git is used to track a file in a project.
+
+# What git branch?
+    - Branches are just a pointers to a commits.
+        - So every time you commit, the branch_pointer get pointed to the new commit.
+        - Time you create new branch, a new pointer is assigned to a code state to be committed.
+    - Git branches are effectively a pointer to a commit(snapshot of your changes).
+    - When you want to add a new feature or fix a bug no matter how big or how small, you spawn a new branch to encapsulate your changes.
+    - This makes it harder for unstable code to get merged into the main code base, and it gives you the chance to clean up your future's history before merging it into the main branch.
+    - like numbers sub_folders of main_folder, numbers of sub_branches that gets merged into the main/master branches.
+    - A pointer references a certain location in memory ( memory_address ) and obtaining the value stored at that location is known as dereferencing the pointer.
+
+# Why git branch?
+    - Git branch for parallel development.
+    - possible to work on all branches in parallel.
+    - Instead of copying files from directory to directory, Git stores a branch as a reference to a commit.
+        - In this sense, a branch represents the tip of a series of commits.
+    - Branches serve as an abstraction for the edit/stage/commit process.
+    - The git branch command lets you create, list, rename, and delete branches.
+    - Branches are just pointers to commits. ( branch ~ commit )
+    - Git branching allows developers to diverge from the production version of code to fix a bug or add a feature.
+    - This done as developers create branches to work with a copy of the code without modifying the existing version.
+    - You create branches to isolate your code changes, which you test before merging to the base branch (more on this later).
+    - There is nothing special about the main branch. It is the first branch made when you initialize a Git repository using the git init command or clone git-repo.
+
+
+# How git branch?
+    $ Git branch command:
+    $ git branch || git branch --list : List all of the branches in your repository. This is synonymous with git branch --list.
+    $ git branch <branch> : Create a new branch called ＜branch＞. This does not check out the new branch.
+    $ git branch -d <branch> : Delete the specified branch. This is a “safe” operation in that Git prevents you from deleting the branch if it has unmerged changes.
+    $ git branch -D <branch> : Force delete the specified branch, even if it has unmerged changes. This is the command to use if you want to permanently throw away all of the commits associated with a particular line of development/branch.
+    $ git branch -m <branch> : Rename the current branch to ＜branch＞.
+    $ git branch -a: All branches(both remote and local branches).
+    $ git branch -r: Remote branches only.
+    $ git branch: Local branches only.
+
+    - Note that ($ git branch <branch>) only creates the new branch.
+    - To start adding commits to it, you need to activate/switch to it with $ git checkout,
+    - and then use the standard git add and git commit commands.
+
+# Push your local branch to remote github repo:
+    $ git branch : list of branch (default/main branch: main/master), * to active branch
+    $ git branch new_branch_name : create new branch name
+    $ git checkout branch_name : activate branch you want as you activate virtual environment in python/django
+        $ git checkout -b new_branch_name" : create and activate branch
+    $ git add .
+    $ git commit -m 'message'
+    $ git push origin branch_name
+
+# Merge nested branch to its base branch:
+    $ git merge sub_branch_name : merge the given named sub_branch into active branch
+    $ create branch in local and also merge in local then push in github remote repo.
+    $ create branch in local and push in github remote repo, merge branch in remote github repo and then pull in local.
+
+# Delete branch:
+    $ delete branch: git branch -d branch_name (this command only deletes the brach which has already been merged only)
+    $ delete branch: git branch -D branch_name (this command deletes the brach which has been merged as well as unmerged)
+
+$ git pull origin master
+    - when other user in team do some update in project and push it in remote repo it is not avialable in your loacl folder.
+    - util you pull it. So pull.
+    - senario:
+        - branch_A in remote repo.
+        - person_1 and person_2 clone project with branch_A.
+        - person_1 update branch_A and push and merge the changes into remote branch_1.
+        - person_2 also update the branch_A, but before person_2, person_1 has already merge his changes to remote.
+        - So first person_2 have to pull the chnages of active branches and then resolve conflict if any and then push and merge.
+
+# checkout commit:
+    $ git checkout #SHA_value  ==> make code active to particular commit respective to #SHA_value.
+    $ git checkout branch_name ==> make code active to particular branch respective to last commit of that particular branch.
+
+1.1 git add    ==> command start tracking file or adds a change in file of the working directory to the staging area.(track changes to be commit)
+1.2 git commit ==> command captures a snapshot of the project's currently staged changes.
+1.3 git push   ==> command is used to upload local repository content to a remote repository. (exports commits to remote branches.)
+1.4 git fetch  ==> command is used to imports commits to local branches.
+1.5 git pull   ==> counterpart to git fetch , but whereas fetching imports commits to local branches, pushing exports commits to remote branches.
+
+Q. fetch vs pull:
+    - Git Fetch is the command that tells the local repository that there are changes available in the remote repository without bringing the changes into the local repository. Git Pull on the other hand brings the copy of the remote directory changes into the local repository.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Always first make a first commit as a project start and then make branch. Then share it to team(invite a collaborator/member).
+- When we invite the collaboaration link in send to email.
+- Distribute task to respective members.
+- Members then create unique branch for each assigned tasks and checkout that particular branch for particular task.
+- then add. commit push
+- when merging branches: checkout to the branch where you want ot merge another branch and then command:
+$ git merge sub_branch_name
+
+# Now, move to remote repo.
+    - Then other member want to see if any other member has push and kind of change then;
+        $ git fetch
+    - bring/pull those changes to our local repo:
+        $ git pull origin master
+
+- Fast-forward merge.(#SHA_id merge) or no_ff
+$ git checkout - ===> activate previous branch.
+$ git rebase origin/ main
+
+# A branch --> Many commit, A commit -> Many stagging_area_add_file_chnages.
+# So while pushing/publishing only one branch is pushed/published at a time, along all of its commit holding respective stagging_area_add_file_changes.
+
+# You push branch to gitrepo:
+    $ git push -u origin main
+    $ git push origin main
+    $ git push origin branch1
+    $ git push origin branch2
+    # when you push the branch it also crimp the changes made by previous branches before it pushed.
+
+- you cannot checkout to the branch even though you create it untill you do some task(create_new_file,edit_some_file, etc) staying in tthat particular branch.
+- you cannot see to the branch in branch_list even though you create it untill you do some task(create_new_file,edit_some_file, etc) staying in tthat particular branch.
+
+
+
+
+- branch: create,delete,rename,switch,compare,merge,rebase,publish,track,
+- HEAD branch: currently active/checkouted/switched branch.
+- You can have many branches in your repo but only one active branch at a time.
+- local branches(in local system/machine's git) and rtemote branches(in github,gitlab,bitbucket).
+$ git branch new_branch_name: create branch based on current commit revision.
+$ git branch new_branch_name revision: create branch after particular commit.
+- you can only create new branch in local repo, and new branch is created in remote repo only when you publish existing local branch.
+$ git push: will publish your local commits.
+
+1. create branch on particular revision.
+2. switching/checkingout branches.
+3. publish your local branch with commits.
+
+- the head branch defines the context that your work is in at the moment.
+- and the head branch is where new commit will be created.
+
+
+
+$ git branch -a
+    * branch1
+    branch2
+    main
+    remotes/origin/branch1
+    remotes/origin/branch2
+    remotes/origin/main
+
+    > above info says that branch1 is your head branch
+    > you have total 3(main,branch1,branch2) branches in your local machine.
+    > and all of them are published into remote repo.
+
+
+
+$ git branch -a
+    branch1
+    branch2
+    branch3
+    * branch4
+    main
+    remotes/origin/branch1
+    remotes/origin/branch2
+    remotes/origin/main
+
+    > above info says that branch4 is your head branch
+    > you have total 5(main,branch1,branch2,branch3,branch4) branches in your local machine.
+    > and all of them are published into remote repo but not branch3 & branch4.
+
+
+
+- rename the local head branch: $ git branch -m <new_name>
+- rename the local other_non-head branch: $ git branch -m <new_name> <old_name>
+
+
+
+- publish loacl-branch of loacl-repo into remote-repo: 
+    $ git push -u origin main
+    $ git push origin branch1
+    $ git push origin branch1/branch1.1
+
+
+
+- tracking branches:
+    - 
+
+
+
+- pull & push branch:
+    $ git branch -v
+    $ 
+
+
+
+- delete other branch, but not possible to delete head bracnh.
+    $ git branch -d <branch_name with no commit>
+    $ git branch -D <branch_name with commit>:
+        - this will also delete all the manipulation done during that respective commit of that respective branch,
+        - but if have create new branch with revision of commit of the branch you want to delete, it will delete that branch but not commit as those commit has already been attached with the new_branch created with the crevision of commit of deleted branch.
+
+
+
+- see list of commit in that particular branch:
+    $ git flog
+    $ git log
+    $ 
+
+
+
+# Reference:
+    - https://www.varonis.com/blog/git-branching#:~:text=What%20is%20Git%20Branching%3F&text=Git%20branching%20allows%20developers%20to,without%20modifying%20the%20existing%20version.
+    - https://www.youtube.com/watch?v=e2IbNHi4uCI
+    - 
+
+    # when you create branc1 and branch2 from same base_commit of same branch, then both of them are irrespective to each other.
+    - like if your main_branch has just initial_commit,
+    - then you create branch_1 and commit chnages, then those changes are not seen when your another braanch is active.
+
+# 
+
+
+
+
+# Reference:
+    - https://www.atlassian.com/git/tutorials/using-branches
+    - https://www.varonis.com/blog/git-branching/
+    - https://www.youtube.com/watch?v=sgzkY5vFKQQ

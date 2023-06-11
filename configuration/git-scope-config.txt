@@ -1,0 +1,101 @@
+1. Git Configuration:
+   * git config lets you configure variables for particuar scopes.
+   * here variables means user.name, user.email etc.
+
+
+2. Configure particular variable|github_account(user.name and user.email) for particular scopes.
+
+
+3. #command_1 ********************************************
+git config --system user.email "example@gmail.com"
+git config --system user.name "example_naam"
+
+git config --global user.email "simbaamir55@gmail.com"
+git config --global user.name "6imba"
+
+git config --local user.email "amirshrestha.construct@gmail.com"
+git config --local user.name "Amir-Shrestha"
+
+
+4. There are total of 5 level/scopes for configuration: system, environment, global, local, worktree.
+   1. System scopes is for all users,
+   2. Global scopes is for single user but all projects,
+   3. Local scopes is for particular repository.
+
+
+5. To see or edit the variable configuration|defination in a particular scopes:
+   #command_2 ********************************************
+   1. git config --system --edit
+   2. git config --global --edit
+   3. git config --local --edit
+
+   * When you enter these command in command prompt you can see the location of the file(which consist all git configuration of particular scope). Therefore you can go the particular directory and open the configuration file.
+
+   i.e :
+    For system scope repo configuration file ==> C:/Programs Files/Git/etc/gitconfig
+    For global scope repo configuration file ==> C:/Users/SimbA/.gitconfig
+    For local scope repo configuration file ==> Repo/.git/config
+
+
+In #command_1 *** you need to mention the scope to,[ i.e git config --scope user.email "example@gmail.com" ], but if you have open the command prompt/git bash in required scope 
+you dont need to mention the scope_name [i.e git config user.email "example@gmail.com"]
+
+configuration with scope : git config --scope user.email "example@gmail.com"
+configuration with scope : git config user.email "example@gmail.com" #command_3 ********************************************
+
+
+
+
+Value of variables of a configuration files depend upon the scope on which command_prompt/git_bash is currently active.
+i.e,
+
+in global scope :
+SimbA@SimbA MINGW64 ~/Desktop
+$ git config --global --edit
+[user]
+        email = simbaamir55@gmail.com
+        name = 6imba
+
+
+in local scope : config of .git folder
+SimbA@SimbA MINGW64 ~/Desktop/ClothesDonation (master)
+$ git config --local --edit
+[user]
+        name = 6imba
+        email = simbaamir55@gmail.com
+
+
+
+git config --scope -l : see configuration at mentioned scope.
+i.e, git config --global -l : see configuration at global scope. #command_4 ********************************************
+
+git config --scope --unset variable : unset the confiruration setted variable in mentioned scope.
+i.e, git config --global --unset user.name : unset the confiruration setted user.name in global scope. #command_5 ********************************************
+
+
+
+
+
+
+When we enter and command(push|clone) at first it looks is any local configuration exits or not if not it looks for global scope
+Local scope is configuration is set inside .git forlders config file of a project/repo.
+In git you are mainly gonna work on local and global scope.
+
+
+
+git config --global alias.s status : create shortcut for git comand: git status ==> git s #command_5 ********************************************
+
+
+git remote origin git@github.com:hamroshop
+
+
+
+
+
+
+*************************************************************************************************************************************************************
+
+Question:
+1. When to set scope of repo local and when as global?
+2. Multiple github account push and clone?
+

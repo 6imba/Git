@@ -1,0 +1,35 @@
+1.How do I know if Git is installed in your system?
+	- To see if Git is installed on your system, open your terminal and type git --version.
+	- If your terminal returns a Git version as an output, that confirms you have Git installed on your system.
+
+	- But if git is not installed on your system then below will be outputed:
+	- C:\Users\SimbA>git --version
+	- 'git' is not recognized as an internal or external command,
+	- operable program or batch file.
+
+2. Now install git:
+
+3. Working with git:
+	# Command:
+		> git init
+		> git add .
+		# Setup/configure git user detail in local git after installing git:
+			> git config --global user.email <email_used_to_create_github_account> ==> git config --global user.email "simbaamir55@gmail.com"
+			> git config --global user.name <username_of_github_account> ==> git config --global user.name "Amir Shrestha"
+		> git commit -m "<commit_message>"
+		> git branch -M main
+		> git remote add origin <https_url>
+		> git push -u origin main
+	# Note:
+		- We need to configure our git_email_&_username only once after installation(At the time of our first commiting).
+	# You need to set global username and useremail of git before using git in local device or else you will get error when you try to commit without setting username_and_email.
+		> git config user.name ==> gives the user name set on git in local device
+		> git config user.email ==> gives the user email set on git in local device
+		# (Configuration before working with git and its respective github account)
+
+
+
+4. Checking git config:
+	> git config user.name
+	> git config user.email
+	> git config --global user.email

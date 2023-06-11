@@ -1,0 +1,106 @@
+
+
+
+$ git checkout <existing_branch>
+$ git checkout -b <new_branch>
+$ git branch -a ==> List all remote branches.
+$ git show-branch
+$ git switch <existing_branch>
+$ git branch || git branch --list : List all of the branches in your repository. This is synonymous with git branch --list.
+$ git branch <branch> : Create a new branch called ＜branch＞. This does not check out the new branch.
+$ git branch -d <branch> : Delete the specified branch. This is a “safe” operation in that Git prevents you from deleting the branch if it has unmerged changes.
+$ git branch -D <branch> : Force delete the specified branch, even if it has unmerged changes. This is the command to use if you want to permanently throw away all of the commits associated with a particular line of development.
+$ git branch -m <branch> : Rename the current branch to ＜branch＞.
+
+$ git reset --hard shid
+
+$ git merge branch_1
+
+--------------------------------------------------------------------------------------------------------
+
+- create a project folder in local system
+- git init #initialize git to the project folder in local system (local repo)
+
+- Create a new file. #untrack file
+- git add <file_name> #track and staged file
+- update file content #modified file
+- git add <file_name> #staged file
+- update file content #modified file
+- git restore <file> # discard changes in working directory of track_file
+- update file content #modified file
+- git add <file_name> #staged file
+- git restore --staged <file_name> #unstage
+- git rm --cached <file_name> #unstage stage file
+- git rm --cached <file_name> # Untrack file that was being track before.
+- git reset <file_name> #unstage
+
+--------------------------------------------------------------------------------------------------------
+
+- delete git repository > rm -rf .git
+
+--------------------------------------------------------------------------------------------------------
+
+- file creator: author.
+- file changer: commitor.
+
+
+> git status
+> git add file_name
+> git restore file_name
+> rm -rf .git
+
+* git remote
+* git remote -v
+
+# Reference:
+    - https://github.com/itsmebrp/gitcheatsheet
+
+> git clone https://github.com/KAMNURU/small-project.git ==> bring remote repository/project in our local computer
+> git init
+> git status ==> show current status of working project directory(untracked files)
+> git add <filename> || git add . || git add --a || git add -p <filename> ==> pass working updated porject code from local to staging area.
+> git commit -m "commit_message" ==> pass working updated porject code from staging area to repository.
+> git push origin -u <branch_name>
+> git push origin <branch_name>
+> git log || git log --oneline || git log --graph ==> view all commit history and its share key.
+> git checkout #shar_key ==> rollback to commit corresponding to shar_key
+> git checkout master ==> last or latest commit or code
+> git diff --staged ==> show the difference
+> git list
+> git config --list
+
+
+
+$ git log will just give comment made in head branch and see the which commit is the last_base commit of head branch. usually last commit is the base of head branch.
+    - to change the base commit of branch: git checkout <shar_key_of_respective_commit_of_head_branch>.
+ 
+$ git checkout <share_key>: activate particular commit.
+$ git checkout <branch_name>: activate particular branch.
+$ git checkout -b <branch_name>
+Q. can we activate particular commmit of parcular branch staying some other branch?
+- base commit for a branch?
+
+
+
+- activate the commit you want ot delete.
+    $ git checkout <share_key>
+
+- git reset --hard HEAD^ ==> remove last commit
+- git reset --hard HEAD~1 ==> remove last 1 commit
+- git reset --hard HEAD~2 ==> remove last 2 commit
+
+- git submodule add https://github.com/6imba/Sub-module.git
+
+- (use "git rm --cached <file>..." to unstage)
+
+
+# remove folder at git remote repo from local git base:
+	- git rm -r --cached folder_name
+	- git commit -m "commit message."
+	- git push
+
+# 
+	
+
+
+> rm -rf .git

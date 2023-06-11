@@ -1,0 +1,8 @@
+> git reset --hard HEAD^ ==> To remove the last commit from git.
+> git reset --soft HEAD~1 ==> undo commit, meaning move to staged area.
+> git reset --hard HEAD~1 ==> delete commit last one commit.
+> git reset --hard 0ad5a7a6 ==> return to specific commit
+> git reset --hard #sha1_value: go to previous commit you want respective to #sha1-value
+
+
+> git checkout #SHA_value  ==> make code active to particular commit respective to #SHA_value.

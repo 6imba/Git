@@ -1,0 +1,61 @@
+1. When you first create repository on github & then clone that repo into you local system.
+	# Syntax:
+		- git clone <https_url>
+	# Implementation:	
+		> git clone https://github.com/Amir-Shrestha/Test1.git
+	# Note:
+		- <https_url> is given in the gitbub_repo_code.
+		- [git bash here} where you want to have the clone of remote reop.
+	# When to use this method:
+		- If you have project in remote git repository but not in local device.
+		- If deleted from local devices.
+		- If needed to copy the online_github_remote repository/project into your local devices.
+
+----------------------------------------------------------------------------------------------------------------------------
+
+2. When you want to sync github repo and local system repo.
+	- first create repo in github
+	- then, create a folder with same(optional) name as of git repo in local system/machine.
+	- start project builting(write code) ********************************
+	- git bash there
+		> git init
+		> git add.
+		> git commit -m "<commit_message>"
+		> git remote add origin <https_url>
+		> git push origin master
+	# Summary:
+		> git init
+		> git add.
+		> git commit -m "version:latest"
+		> git remote add origin https://github.com/Amir-Shrestha/Test2.git
+		> git push origin master
+	# Missconception:
+		- here name of github_remote_repository and name of local_system_project_folder can be different but it's better to have same.
+		- you can initialize the git in local project at the time you want to track or push to remote.(any of time but better initialize&track from the begining.)
+
+> echo "# Git-Test" >> README.md
+
+
+1. Either you create GitHub repo first and then clone it.
+2. Or you create GitHub repo first and create local directory seperately, then link them.
+
+# 1:
+    > create github remote repo
+    > then clone it to local system: git clone https://github.com/<Git_User_Name>/<GitHub_Remote_Repo_Name>.git
+    > create/update -> add -> commit -> push
+
+# 2:
+    > create system local folder
+    > create github remote repo
+    > initialize git in system local repo: git init
+    > git init (create git local repo with main as a first branch)
+    > git add.
+    > git commit -m ""
+    > git remote add origin https://github.com/<Git_User_Name>/<GitHub_Remote_Repo_Name>.git
+    > git push -u origin main
+
+
+
+
+
+

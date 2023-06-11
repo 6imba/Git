@@ -1,0 +1,5 @@
+- head branch / active branch
+- base branch / upstream branch
+- origin
+- remote
+- fork

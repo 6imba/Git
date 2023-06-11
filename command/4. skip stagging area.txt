@@ -1,0 +1,8 @@
+# Explicitly staged and commit file:
+    > git add <file_name>
+    > git commit -m "<message>"
+
+# Staged and commit tracked file at once:
+    > git commit -a -m "<message>" || > git commit -am "<message>"
+
+# 

@@ -1,0 +1,20 @@
+
+# Git branch for parallel development.
+# Git is used to track a file in a project.
+
+# Branches are just a pointers to a commits. 
+    - So every time you commit, the branch_pointer get pointed to the new commit.
+    - Time you create new branch, a new pointer is assigned to a code state to be committed.
+
+
+# Local VS:
+# CVS: no history track.
+# DVS: history track.
+# GIT is software(DVS).
+# GIT Hub is website that provide hosting service for git repository.(Other: bitbucket,gitlab)
+
+
+
+# Setup/configure git user detail in local git:
+    - git config --global user.email "Amir Shrestha."
+    - git config --global user.email "simbaamir55@gmail.com"

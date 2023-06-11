@@ -1,0 +1,41 @@
+1. What is Git?
+    - Git is a popular version control system(distributed).
+    - It was created by Linus Torvalds in 2005, and has been maintained by Junio Hamano since then.
+    - Git is used to track a file in a project.
+
+2. Git is Distributed Version Control System.
+    - CVS: no history track.
+    - DVS: history track.
+    - GIT is software(DVS).
+    - GIT Hub is website that provide hosting service for git repository.(Other: bitbucket,gitlab)
+
+3. So, firstly what is Version Control System?
+    - System that helps us to control version of our project.
+
+4. Version Control System:
+    1. Centralize Version Control System (central server => workon central_server/ copy/pull file with no history)
+    2. Distributed Version Control System (central server, copy/pull main_file with history -- update -- push updated_file ==> workon personnel_computer)
+
+5. Git : Distributed Version Control System.
+
+6. It is used for:
+    - Track project.
+    - Tracking code changes.
+    - Tracking who made changes.
+    - Coding collaboration.
+
+7. WorkingLocalDirectory ==> StagingArea ==> LocalRepository
+    - WorkingLocalDirectory ==add(track|stage)==> StagingArea ==commit==> LocalRepository
+
+	- # untrack  = file has not sent to staging area(when file is created for the first time)
+	- # unstaged = file has been sent to staging area but new changes are not added to staging area.
+    > git add <filename>
+    > git add *
+
+# Main-Concept:
+    - WorkingLocalDirectory ==add(track|stage)==> StagingArea ==commit==> LocalRepository ==(push|pull)==> RemoteRepository ====> publish product.
+
+# Get three stage: https://youtu.be/Cdg2FGDMglk?list=PLu0W_9lII9agwhy658ZPA0MTStKUJTWPi
+
+# git add ==> choose a file that you want to take in staging area.( staging area files are the files that you want commit to your local repo)
+

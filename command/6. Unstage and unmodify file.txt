@@ -1,0 +1,7 @@
+- git restore <file> # discard changes in working directory of track_file
+- git restore --staged <file_name> #unstage
+- git rm --cached <file_name> #unstage stage file
+- git rm --cached <file_name> # Untrack file that was being track before.
+- git reset <file_name> #unstage
+- git checkout -- <filename> #move to last commit.
+- git checkout -f #move to last commit.

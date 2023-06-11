@@ -1,0 +1,23 @@
+# github,gitlab,bitbucket
+
+> git remote
+> git push
+> git pull
+> git clone
+
+- git remote add <source_name> git@github.com:6imba/project_1
+> git remote add origin git@github.com:6imba/project_1 ==> you can give other name instead of origin but origin is best practice. Origin means remote source.
+
+> git remote -v
+    origin  https://github.com/6imba/Test_1.git (fetch)
+    origin  https://github.com/6imba/Test_1.git (push)
+
+> git push
+    - fatal: The current branch main has no upstream branch.
+    - To push the current branch and set the remote as upstream, use
+    > git push --set-upstream origin main
+
+> git push -u origin main
+
+# permission and SSH and GPG key.
+

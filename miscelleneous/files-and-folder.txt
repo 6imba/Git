@@ -1,0 +1,16 @@
+# Gut files & folder:
+	- files : .gitignore, README.md, LICENSE
+	- folder: .git
+
+# .gitignore:
+	.gitignore file contains the name of files and folder, to be ignore. Means git will not track those files&folder in local repo.
+	- write name of file and folder inside .gitignore file, that you don't want to git to track, means also not push into github.
+	packages/ ==> ignore all folder named packages.
+	*.log ==> ignore all .log extension files
+	error.log ==> ignore a error.log files
+	/dirs/ ==> ignore outer dirs folder
+	static/dirs/ ==> ignore dirs folder inside static folder
+
+# 
+
+

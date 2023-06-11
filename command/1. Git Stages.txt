@@ -1,0 +1,97 @@
+- The git add command adds a change in the working directory to the staging area.
+- It tells Git that you want to include updates to a particular file in the next commit.
+- However, git add doesn't really affect the repository in any significant way—changes are not actually recorded until you run git commit.
+- git add : takes a modified file in your working directory and places the modified version in a staging area.
+- git commit takes everything from the staging area and makes a permanent snapshot of the current state of your repository that is associated with a unique identifier.
+
+
+
+# working_directory ==> staging_area ==> local_repository
+    - The working area is where files that are not handled by git. These files are also referred to as "untracked files."
+    - Staging area is files that are going to be a part of the next commit, which lets git know what changes in the file are going to occur for the next commit.
+    - The repository contains all of a project's commits.
+
+
+
+# Git Three Stages:
+    - When ever we want to commit any changes in files, firstly will add it to staging area using git add command.
+    - So why is staging area needed? why doo we need to add changes in staging area?
+    - add all the related changed files in staging area and hold all of it in a single commit.
+
+
+
+- git repo vs normal repo: git repo has hidden .git folder.
+
+
+
+# Main-Concept:
+    - Local_System_Project_Folder ===add(stage file)===> Staging_Area ===commit===> Local_Git_Repository ===push===>  Remote_Git_Repository
+	- local repo ==> git repo ==> publish product.
+
+
+
+3. Tracking files: Save/Track changes made to Project_files into Staging_Area.
+    $ git add <filename>
+    $ git add <filename>,<filename>,<filename>
+    $ git add --a
+    $ git add .
+    - Bind all the changes made to different files in Staging_Area.
+    # unstage file: > git rm --cached <filename>
+    - choose a files that you want to take in staging area.( staging area holds the files that you want commit to your local git repo)
+
+
+
+
+
+4. Bind all the changes made to different files in Staging_Area together into a single commit and then save it in Local_Git_Repository.
+    $ git commit -m "initial commit".
+    $ git commit -m "<commit_message>"
+    - this means a single commit hold that changes made to files that were tracked/saved in stagging_area before that particular commit.
+    - commit the changes in staged file into local git repo
+    - take a snapshot
+    - Bind the changes made to all changed files in Staging_Area together into a single commit.
+    - take a snapshot of all staged_changed_file  in a single commit.
+    $ git commit ==> open editor
+
+
+
+# Watch commit history:
+    > git log
+        - see hash of commit
+
+
+
+# change files:
+    > git status
+    > git restore <filename>: to discard changes to a file
+    > git add .
+    > git restore --staged <filename>: to unstage a file added.
+    > git commit -a 
+
+
+# Tracked vs Staged:
+    https://www.youtube.com/watch?v=PArS4YeAq8w&list=PLu0W_9lII9agwhy658ZPA0MTStKUJTWPi&index=6
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+# Untrack file --> git add --> Start tracking file.
+# UnModified file --> Modified/Change/Update file --> git add <file_name> --> Staged file.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+# WorkingLocalDirectory ==> StagingArea ==> LocalRepository
+	- untrack  = file has not sent to staging area(when file is created for the first time)
+	- unstaged = file has been sent to staging area but not staged new changes. (when tracked/staged before but new changes to it has not been staged.)
+    > git add <filename>
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+# git add <filename>:
+    - track and staged untrack file
+    - stage unstaged file file
+
+# git commit -m "message":
+    - commit to local repo.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+

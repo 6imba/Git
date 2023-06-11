@@ -1,0 +1,56 @@
+1. create project_folder in your local system/machine:
+
+2. Either initialize git before writing any code in project folder or at the time when you want to track code&changes.
+   	-But its best practise to initialize git at the begining of the project.
+    	- So initilize git in your project_folder in your local system/machine.
+    	- initialize git means to create local_git_repository inside your project_folder in your local system/machine.
+        	$ git init
+    	- You can see .git folder inside your project_folder, that is our local_git_repository, which track our all code manipulation/changes.
+    	- Therefore, git init initializes git for your current project/project_folder.(create .git hidden folder with main as default root branch but if you create repo in github first and then clone it, there you will have master as rot branch and later rename it.)
+
+    # Start writing code for your project.
+    # create README_file: echo "# Git-Test" >> README.md
+
+3. Tracking files: Save/Track changes made to Project_files into Staging_Area.
+    $ git add <filename>
+    $ git add <filename>,<filename>,<filename>
+    $ git add --a
+    $ git add .
+    - Bind all the changes made to different files in Staging_Area(a single commit).
+    # unstage file: > git rm --cached <filename>
+    - choose a files that you want to take in staging area.( staging area holds the files that you want commit to your local git repo)
+
+4. Bind all the changes made to different files in Staging_Area together into a single commit and then save it in Local_Git_Repository.
+    $ git commit -m "initial commit".
+    $ git commit -m "<commit_message>"
+    - this means a single commit hold that changes made to files that were tracked/saved in stagging_area before that particular commit.
+    - commit the changes in staged file into local git repo
+    - take a snapshot
+    - Bind the changes made to all changed files in Staging_Area together into a single commit.
+    - take a snapshot of all staged_changed_file  in a single commit.
+    $ git commit ==> open editor
+
+
+# Watch commit history:
+    > git log
+        - see hash of commit
+        - 
+# change files:
+    > git status
+    > git restore <filename>: to discard changes to a file
+    > git add .
+    > git restore --staged <filename>: to unstage a file added.
+    > git commit -a 
+
+5. Link Local_Git_Repository with Remote_Git_Repository:
+    $ git remote add origin https://github.com/Amir-Shrestha/Test2.git
+
+6. Publish/Push the commit saved into Local_Git_Repository to Remote_Git_Repository:
+    - So we generally just dont push/publish our commit to out Remote_Git_Repository, instead we publish/push that branch holding that particular commit. 
+    $ git push -u origin main
+
+# A branch --> Many commit, A commit -> Many stagging_area_add_file_changes.
+# So while pushing/publishing only one branch is pushed/published at a time, along all of its commit holding respective stagging_area_add_file_changes.
+
+# Delete .git folder:
+    - rm -rf .git

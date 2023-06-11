@@ -1,0 +1,8 @@
+- git rebase re-write commits,
+- git rebase re-write commits from one branch onto another branch,
+- git rebase useful alternative to merging because it gives use cleaner repo history and clean repo history help us to troubleshoot bug faster(log,bisect).
+- git rebase using Git_CLI, Git_GUI, Git_GitKraken.
+
+Q. Does commit based on previous commit or based on branch on which it was created?
+
+- Rebasing is the process of moving or combining a sequence of commits to a new base commit.

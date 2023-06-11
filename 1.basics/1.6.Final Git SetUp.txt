@@ -1,0 +1,25 @@
+1. $ git clone https://github.com/<Git_User_Name>/<GitHub_Remote_Repo_Name>.git
+    # Start writing code for your project.
+
+2. Save/Track changes made to file into Staging_Area.
+    $ git add <filename>,<filename>,<filename>
+    - choose a files that you want to take in staging area.( staging area holds the files that you want commit to your local git repo)
+
+3. Bind all Staging_Area changes together into a single commit and then Save it in Local_Git_Repository.
+    $ git commit -m "<commit_message>"
+    - this means a single commit hold that changes made to files that were tracked/saved in stagging_area before that particular commit.
+
+4. Link Local_Git_Repository with Remote_Git_Repository:
+    $ git remote add origin https://github.com/<Git-User-Name>/<Remote_Git_Repository_Name>.git
+
+6. Publish/Push the commit saved into Local_Git_Repository to Remote_Git_Repository:
+    - So we generally just dont push/publish our commit to out Remote_Git_Repository, instead we publish/push that branch holding that particular commit. 
+    $ git push -u origin main
+
+remote: any 
+origin: specific
+
+# In order to operate git command on remote repo from local, you need to configure remote repository with local:
+    > git remote add <new-remote-repo>
+    > git remote add origin <https_url>
+    > git push <new-remote-repo>
