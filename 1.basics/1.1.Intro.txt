@@ -30,8 +30,8 @@ FUll form: Global Information Tracker
     - WorkingLocalDirectory ==> StagingArea ==> LocalRepository ==> RemoteRepository
 
         > WorkingLocalDirectory:                                     |
-            - add(track/stage)                                       |
-                > StagingArea: stash, reset, diff                    |
+            - add(track/stage), reset(unstage), rm(untrack)          |
+                > StagingArea: stash, diff                           |
                     - commit                                         |
                         > LocalRepository: merge                     |
                             - push|fetch                            pull

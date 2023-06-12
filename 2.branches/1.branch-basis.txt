@@ -113,9 +113,6 @@ $ git rebase origin/ main
 - you cannot checkout to the branch even though you create it untill you do some task(create_new_file,edit_some_file, etc) staying in tthat particular branch.
 - you cannot see to the branch in branch_list even though you create it untill you do some task(create_new_file,edit_some_file, etc) staying in tthat particular branch.
 
-
-
-
 - branch: create,delete,rename,switch,compare,merge,rebase,publish,track,
 - HEAD branch: currently active/checkouted/switched branch.
 - You can have many branches in your repo but only one active branch at a time.
