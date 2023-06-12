@@ -1,4 +1,4 @@
-- cocollaboration: share-access-of-git-repo
+- collaboration: share-access-of-git-repo
 Now if you want to share your project to the team or another git account.
 1.Click to project you want to share in github
 2.Click Setting

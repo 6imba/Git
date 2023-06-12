@@ -6,83 +6,34 @@ To push the current branch and set the remote as upstream, use
     git push --set-upstream origin main
 
 
+$ git status
+On branch main
+Your branch is based on 'origin/main', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+nothing to commit, working tree clean
+
+----------------------------------------------------------------------------------------------------
+
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+----------------------------------------------------------------------------------------------------
+
+$ git push
+fatal: The current branch develop has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin develop
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+----------------------------------------------------------------------------------------------------
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1. What is origin in git?
-   In Git, "origin" is a shorthand name for the remote repository that a project was originally cloned from.
-
-2. What is remote repository?
-   A remote repository in Git, also called a remote, is a Git repository that's hosted on the Internet or another network.
-
-3. What is the difference between local and remote repository?
-   	Local repositories reside on the computers of team members.
-	In contrast, remote repositories are hosted on a server that is accessible for all team members.
-	Most likely on the internet or on a local network.
-
-4. local repo ==> git repo ==> publish product.
-
-5. Local_System_Project_Folder ===add===> Stagging_Area_Index ===commit===> Local_Git_Repository ===push_branch===>  Remote_Git_Repository
-
-bolb?
-
-
-
-# Terms:
-    # create merge delete
-    # losing history
-    # origin
-    # upstream
-    # git work flow
-    # rollback vs rebase
-    # snapshot vs difference
-    # snapshot ~ commit
-    # checksum
-    # SHA-1
-    # Roll back to previous state/commit.
-
-
-
-# Local repository
-# Working repository
-# Staging area
-# Remote repository
-
-
-branching? merging? conflict? tagging? stashing?
-Branching workflow: Long running branches & Topic Branches
-Long running branches: master, develop, purpose update, this branch stayes till the end of project.
-
-
-# git scope: system, global, local
-
-remote: any 
-origin: specific
-
-
-- rebase and merge
-
-
-- add
-- commit
-- push
-- pr
-- merge
-- fetch
-- pull
 

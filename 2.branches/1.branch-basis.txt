@@ -211,11 +211,6 @@ $ git branch -a
     - like if your main_branch has just initial_commit,
     - then you create branch_1 and commit chnages, then those changes are not seen when your another braanch is active.
 
-# 
-
-
-
-
 # Reference:
     - https://www.atlassian.com/git/tutorials/using-branches
     - https://www.varonis.com/blog/git-branching/

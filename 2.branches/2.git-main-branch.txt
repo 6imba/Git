@@ -4,17 +4,7 @@
 	> Note: you can given any name other than "main" but "main" is prefered as standared.
 
 	#Summary:
-		> git init
-		> git add .
-		> git commit -m "<commit_message>"
 		> git branch -M main
-		> git remote add origin <https_url>
-		> git push -u origin main
-
-	# Also can do:
-		> git init
-		> git add .
-		> git commit -m "<commit_message>"
 		> git branch -M amir_root_branch
-		> git remote add origin <https_url>
-		> git push -u origin amir_root_branch
+
+- first/default/root/master/main: branch

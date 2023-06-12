@@ -35,3 +35,33 @@ bolb?
 # Staging area
 # Remote repository
 
+
+# Terms:
+    # create merge delete
+    # losing history
+    # origin
+    # upstream
+    # git work flow
+    # rollback vs rebase
+    # snapshot vs difference
+    # snapshot ~ commit
+    # checksum
+    # SHA-1
+    # Roll back to previous state/commit.
+
+
+# git scope: system, global, local
+
+remote: any 
+origin: specific
+
+
+- rebase and merge
+
+- add
+- commit
+- push
+- pr
+- merge
+- fetch
+- pull

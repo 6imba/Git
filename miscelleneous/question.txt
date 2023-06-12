@@ -19,3 +19,5 @@ create branch in local repo but push and merge branch in remote repo.
 - yadi ma multiple branch ma akaichoti kaam gariraxu vane k harek choti branch switch handa k commit hanirakhnu? (before switching branches make sure to commit all changes)
 - jaba sama auta kunai branch ko pr resolve hudaina tyo branch arko pr send garna mildaina ho?
 - when you switch any branch you can see the corresponding files of other branch getting removed too in local_git_repo.
+
+bolb?

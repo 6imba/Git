@@ -3,3 +3,7 @@
 - origin
 - remote
 - fork
+
+
+
+- jun user le branch create gareko ho tei user le PR raise garna milxa.

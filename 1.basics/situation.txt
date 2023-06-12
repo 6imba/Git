@@ -1,0 +1,7 @@
+# undo last commit:
+	- git reset --soft HEAD~1 ===> Undo the commit but keep the changes staged
+	- git reset --hard HEAD~1 ===> Undo the commit and discard the changes
+	
+# 
+
+

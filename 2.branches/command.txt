@@ -61,3 +61,9 @@ $ git switch <existing_branch>
 
 
 $ git pull origin DHA-176-ui-related-family-submission --no-rebase | $ git fetch origin $ git merge origin/<branchname> ==> Divergent branch
+
+git push --set-upstream origin DHA-21/submission-form
+
+git branch -r
+git remote prune origin
+

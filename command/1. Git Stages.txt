@@ -13,7 +13,7 @@
 
 
 
-# Git Three Stages:
+# Why stagging area?
     - When ever we want to commit any changes in files, firstly will add it to staging area using git add command.
     - So why is staging area needed? why doo we need to add changes in staging area?
     - add all the related changed files in staging area and hold all of it in a single commit.
@@ -38,8 +38,6 @@
     - Bind all the changes made to different files in Staging_Area.
     # unstage file: > git rm --cached <filename>
     - choose a files that you want to take in staging area.( staging area holds the files that you want commit to your local git repo)
-
-
 
 
 
