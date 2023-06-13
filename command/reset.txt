@@ -1,0 +1,17 @@
+$ git reset command in Git can be used to achieve both unstaging changes and undoing commits, depending on how it is used.
+- The behavior of git reset varies depending on the options and arguments provided.
+
+1. Unstaging Changes:
+    - To unstage changes and move them back to the working directory, you can use git reset with the HEAD and file(s) or directory as arguments.
+    $ git reset HEAD <filename>
+
+2. Undoing Commits:
+    - By specifying a commit with git reset, you can move the branch pointer and the staging area to a previous commit, effectively undoing one or more commits. There are three common options for resetting commits:
+
+    --soft: Resets the branch pointer to the specified commit, preserving the changes from the undone commits as uncommitted changes in the working directory. This allows you to make further adjustments or commit the changes again.
+    --mixed (default): Resets the branch pointer and the staging area to the specified commit, effectively uncommitting the changes. The changes remain in the working directory as uncommitted changes, allowing you to modify or discard them.
+    --hard: Resets the branch pointer, staging area, and the working directory to the specified commit, discarding all changes introduced in the undone commits. This option should be used with caution, as it permanently removes the changes.
+
+    git reset --soft HEAD~1
+    git reset --mixed HEAD~1
+    git reset --hard HEAD~1

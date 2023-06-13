@@ -21,3 +21,5 @@ create branch in local repo but push and merge branch in remote repo.
 - when you switch any branch you can see the corresponding files of other branch getting removed too in local_git_repo.
 
 bolb?
+ssl?
+squash commit
