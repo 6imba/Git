@@ -29,3 +29,9 @@ $ git branch -r
 
 - git commit ==> it move our code from Staging Area ---> Repository
 - git remote add origin https://github.com/Amir-Shrestha/Project_name.git ==> link our project to github repository.
+
+
+- find all .git folder inside active directory including the nested one: $ find ./ -type d -name ".git"
+- delete .git folder of active directory: $ rm -rf ./.git
+- remove git cache: $ git rm -r --cached .
+
