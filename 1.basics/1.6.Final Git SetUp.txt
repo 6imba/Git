@@ -9,7 +9,7 @@
     $ git commit -m "<commit_message>"
     - this means a single commit hold that changes made to files that were tracked/saved in stagging_area before that particular commit.
 
-4. Link Local_Git_Repository with Remote_Git_Repository:
+4. Link Local_Git_Repository with Remote_Git_Repository: (incase we have initialize git init in local)
     $ git remote add origin https://github.com/<Git-User-Name>/<Remote_Git_Repository_Name>.git
 
 6. Publish/Push the commit saved into Local_Git_Repository to Remote_Git_Repository:
